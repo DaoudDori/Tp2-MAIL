@@ -16,6 +16,13 @@ public class SapinDeNoel
         this.liste_de_guirlandes.add(g);
     }
     
+    public void retirerGuirlandes()
+    {
+    	int size = this.liste_de_guirlandes.size();
+        this.liste_de_guirlandes.remove(size-1);
+    		
+    }
+    
     
     
     
@@ -51,7 +58,35 @@ public class SapinDeNoel
     
     
        
-    public void faire_pousser(double x)
+    public boolean isNaturel() {
+		return naturel;
+	}
+
+
+
+
+	public void setNaturel(boolean naturel) {
+		this.naturel = naturel;
+	}
+
+
+
+
+	public ArrayList<Guirlande> getListe_de_guirlandes() {
+		return liste_de_guirlandes;
+	}
+
+
+
+
+	public void setListe_de_guirlandes(ArrayList<Guirlande> liste_de_guirlandes) {
+		this.liste_de_guirlandes = liste_de_guirlandes;
+	}
+
+
+
+
+	public void faire_pousser(double x)
     {
         if(naturel)
         {
